@@ -1,10 +1,9 @@
 import threading
-from os.path import join, dirname, realpath
 
 from plyer import notification
 
 kwargs = {'title': 'Eyes exercises', 'message': "It's time for health care", 'app_name': 'Notification', 'timeout': 10,
-          'app_icon': join(dirname(realpath(__file__)), 'eye3.ICO')}
+          'app_icon': r'D:\программирование\true github\notification\img\eye3.ico'}
 
 notification.notify(**kwargs)
 
