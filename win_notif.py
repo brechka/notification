@@ -1,7 +1,7 @@
 import threading
-
 from plyer import notification
 
+wait_time_seconds = 900
 kwargs = {
     'title': 'Eyes exercises',
     'message': "It's time for health care",
@@ -11,8 +11,6 @@ kwargs = {
 }
 
 notification.notify(**kwargs)
-
-wait_time_seconds = 900
 ticker = threading.Event()
 
 while not ticker.wait(wait_time_seconds):
