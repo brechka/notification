@@ -7,7 +7,7 @@ kwargs = {
     'message': "It's time for health care",
     'app_name': 'Notification',
     'timeout': 10,
-    'app_icon': r'D:\программирование\true github\notification\img\eye3.ico'
+    'app_icon': r'img\eye3.ico'
 }
 
 notification.notify(**kwargs)
